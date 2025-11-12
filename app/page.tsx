@@ -195,7 +195,7 @@ export default function Home(): JSX.Element {
                 key={i}
                 className={`box ${cell.status} ${cell.open ? "open" : ""} `}
               >
-                <span className={`letter ${cell.hidden ? "hidden" : ""}`}>
+                <span className={`letter ${cell.hidden ? "hidden" : "shown"}`}>
                   {cell.letter.toUpperCase()}
                 </span>
               </div>

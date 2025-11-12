@@ -182,7 +182,7 @@ main {
 }
 
 .open {
-  animation: rotation 1s ease-in-out;
+  animation: rotation 1s forwards;
 }
 
 /* анімація: від 0deg до 180deg по X */
@@ -200,4 +200,19 @@ main {
 
 .hidden {
   opacity: 0;
+}
+.shown {
+  animation: appearing 1s forwards;
+}
+
+@keyframes appearing {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
